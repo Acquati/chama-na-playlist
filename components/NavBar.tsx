@@ -1,9 +1,20 @@
 import styles from './NavBar.module.sass'
 
 const NavBar = () => (
-  <nav className={styles.navBar}>
-    <h1>Nav Bar</h1>
-  </nav>
+  <div className={styles.navBar}>
+    <div className={styles.container}>
+      <h1>Chama na Playlist</h1>
+      <div>
+        <h1>Pesquisar</h1>
+        <div className={styles.menuToggle}>
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
 )
 
 export default NavBar

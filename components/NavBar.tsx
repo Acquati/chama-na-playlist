@@ -14,11 +14,13 @@ const NavBar = () => (
         </div>
       </div>
 
-      <div className={styles.menuToggle}>
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
+      <div>
+        <div className={styles.menuToggle}>
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </div>

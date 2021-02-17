@@ -3,7 +3,7 @@ import styles from './NavBar.module.sass'
 const NavBar = () => (
   <div className={styles.navBar}>
     <div className={styles.container}>
-      <h1>Chama na Playlist</h1>
+      <h1>ChamaNaPlaylist</h1>
       <div>
         <h1>Pesquisar</h1>
         <div className={styles.menuToggle}>

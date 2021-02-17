@@ -1,7 +1,7 @@
 .navBar
   width: 100%
-  background-color: black //var(--background-color)
-  outline: 1px solid rgba(var(--font-color-rgb), 0.1)
+  background-color: var(--background-color-2)
+  // outline: 1px solid rgba(var(--font-color-rgb), 0.1)
   z-index: 1000
   position: sticky
   top: 0
@@ -18,6 +18,7 @@
 
     h1
       margin: 0
+      font-size: 1.4rem
 
     > div
       display: flex
@@ -30,12 +31,12 @@
         position: relative
         -webkit-user-select: none
         user-select: none
-        width: 33px
-        height: 22px
+        width: 22px
+        height: 15px
 
         input
-          width: 33px
-          height: 22px
+          width: 22px
+          height: 15px
           position: absolute
           z-index: 1001
           cursor: pointer
@@ -45,7 +46,7 @@
           &:checked
             ~ span
               opacity: 1
-              transform: rotate(-45deg) translate(1px, 0px)
+              transform: rotate(-45deg) translate(0px, 0px)
 
               &:nth-last-child(2)
                 opacity: 0
@@ -57,13 +58,13 @@
 
         span
           display: block
-          width: 33px
-          height: 4px
-          margin-bottom: 5px
+          width: 22px
+          height: 2px
+          margin-bottom: 4px
           position: relative
           background: var(--font-color)
           border-radius: 3px
-          transform-origin: 30px 2px
+          transform-origin: 20px 1px
           transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
 
           &:first-child

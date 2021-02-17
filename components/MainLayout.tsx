@@ -9,7 +9,9 @@ type Props = {
 const MainLayout = ({ children, siteTitle = 'Chama na Playlist' }: Props) => (
   <Layout siteTitle={siteTitle}>
     <div className={styles.mainLayout}>
-      {children}
+      <div className={styles.container}>
+        {children}
+      </div>
     </div>
   </Layout>
 )

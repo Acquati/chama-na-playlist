@@ -1,9 +1,11 @@
 import styles from './Footer.module.sass'
 
 const Footer = () => (
-  <footer className={styles.footer}>
-    <h1>Footer</h1>
-  </footer>
+  <div className={styles.footer}>
+    <div className={styles.container}>
+      <h1>Footer</h1>
+    </div>
+  </div>
 )
 
 export default Footer

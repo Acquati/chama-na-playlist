@@ -8,7 +8,7 @@ const NavBar = () => (
       <h1>ChamaNaPlaylist</h1>
 
       <div className={styles.searchContainer}>
-        <input type="text" />
+        <input type="text" placeholder="Buscar" />
         <div className={styles.searchIcon}>
           <FontAwesomeIcon icon={faSearch} />
         </div>

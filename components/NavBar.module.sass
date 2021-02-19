@@ -11,7 +11,7 @@
     margin: 0 auto
     max-width: var(--container-width)
     height: var(--nav-bar-height)
-    padding: 0 1.5rem
+    padding: 0 var(--content-padding)
     display: flex
     align-items: center
     justify-content: space-between
@@ -31,11 +31,11 @@
         color: var(--font-color)
         padding: 4px 8px
         height: 34px
+        transition: border 0.55s ease
 
         &:focus
-          border: 1px solid #808080
+          border: 1px solid var(--primary-color)
           outline: none
-          border-radius: 4px 0px 0px 4px
 
       .searchIcon
         background-color: #323232
@@ -44,6 +44,10 @@
         border-radius: 0px 4px 4px 0px
         color: #808080
         display: flex
+        transition: color 0.55s ease
+
+        &:hover, &:focus
+          color: var(--primary-color)
 
         svg
           margin: auto
@@ -69,6 +73,7 @@
           ~ span
             opacity: 1
             transform: rotate(-45deg) translate(0px, 0px)
+            background-color: var(--primary-color)
 
             &:nth-last-child(2)
               opacity: 0
@@ -84,10 +89,10 @@
         height: 2px
         margin-bottom: 4px
         position: relative
-        background: var(--font-color)
+        background-color: var(--font-color)
         border-radius: 3px
         transform-origin: 20px 1px
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease, background-color 0.55s ease
 
         &:first-child
           transform-origin: 0% 0%

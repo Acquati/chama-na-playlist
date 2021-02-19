@@ -1,4 +1,4 @@
-import styles from './NavBar.module.sass'
+import styles from './styles.module.sass'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

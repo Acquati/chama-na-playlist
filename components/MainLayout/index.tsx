@@ -1,5 +1,5 @@
-import Layout from './Layout'
-import styles from './MainLayout.module.sass'
+import Layout from '../Layout'
+import styles from './styles.module.sass'
 
 type Props = {
   children: React.ReactNode

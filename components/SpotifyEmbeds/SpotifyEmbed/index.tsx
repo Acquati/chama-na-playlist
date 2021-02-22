@@ -12,7 +12,7 @@ const useResize = (myRef: any) => {
   useEffect(() => {
     setWidth(myRef.current.offsetWidth)
     setHeight(myRef.current.offsetHeight)
-  }, [myRef])
+  })
 
   return { width, height }
 }
